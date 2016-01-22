@@ -1,0 +1,42 @@
+Web Development Section
+	
+	Polling Structure[Python]
+		Basically a backend caching mechanism that exploits polling statistics to the end of saving consts on the use of 3rd party API's.
+		Reduces transaction costs to about 12-25% of the unchaced polling. This project is more or less finished.
+
+	Fleet Tracker[Web App]
+		Ruby on rails project. First exposure to web dev. No front end frameworks. Everything is handled using Ajax, and javascript
+		Requires Vinli Auth to run.  Basically tracks vehicles, their fuel levels.  
+	Race-Android[Python/Javascript backend]
+		Backend for android app prototype.  
+		The mobile app is used to show a visual readout/minimap of a race track your vehicle is on.(Android Native, not included in this directory)
+		The backend stores race track information for a racing app and replies with a track's JSON.
+		Two  python scripts are responsible for datacurration.  One updates weather information cache. The other parses hand-drawn Google KML tracks for track information. Several distance formulas are used to calculate the distance of the race track.  
+
+	Messing with meteor[Javascript]
+		To-do list using meteor.js. Basically my take on meteor's standard tutorial
+	
+	Kobra Clone[HTML/CSS/Javscript]
+		Unfinished. Front end UI stuff for a collaborative python interpreter. (kind of like google docs for python coding)	
+		Idea is to concurrently persist edits, as well as offer interpretation of python code.
+
+
+	Socketing /	Sockets[Java]
+		Played around with sockets. 
+
+	A spinning cube
+		Part of a three.js tutorial. It is an artifact of an effort I made to play around with 3js a year ago.
+
+NON Web Section
+
+	crouching tiger hidden back-prop [Python]
+		Innefficient implementation of neural nets. Inneficient because gradient matrices were hand calculated(did not know that theano had an auto-differentialtion function)
+
+	Face recognition ala open cv [Python]
+		Implemented haar cascades for facial recognition. Open CV did the recognition. The project was more about I building a personal Haar cascade. 
+
+	Huffman Code implementation [Java]
+		Built an implementation of Huffman Encoding Compression algorithm. This project is complete. No external libs used
+
+	Nime Mens Morris AI [Java]
+		Personal implementation of alpha beta pruning, and minimax advesarial search functions used to play a game of nine mens morris on a custom board configuration. No external libs used
