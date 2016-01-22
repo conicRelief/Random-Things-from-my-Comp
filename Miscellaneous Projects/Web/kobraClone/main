@@ -1,0 +1,47 @@
+# from flask import Flask
+#
+# app = Flask(__name__)
+#
+#
+# Text = ""
+#
+# @app.route("/")
+# def hello():
+#     return "Hello World!"
+#
+#
+# @app.route("/api/give")
+# def give(theText):
+#     Text = theText
+#     print Text
+#     return True
+#
+# if __name__ == "__main__":
+#     app.debug = False
+#     app.run()
+
+
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
+def enhancedPrint(message, color = '\033[94m',  delimeter = "."):
+    for x in message.split(delimeter):
+        print + color + x + '\033[0m'
+
+
+
+the_good = " Syntax is highlighted. The page is surprising responsive to the live edits of other users"
+the_bad = " There is no way to run this code, Kobra likely won't attempt anything that"
+
+enhancedPrint("The Good")
+enhancedPrint(the_good, bcolors.OKGREEN)
+enhancedPrint("The Bad")
+enhancedPrint(the_bad, bcolors.FAIL, delimeter=",")

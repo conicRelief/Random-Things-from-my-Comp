@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Collaborate On Python</title>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!--<link href="styles/menu_styles.css" rel="stylesheet">-->
+        <!--<link href="styles/style.css" rel="stylesheet">-->
+
+            <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>-->
+
+        <script src="https://rawgithub.com/systemjs/systemjs/0.19.6/dist/system.js"></script>
+        <script src="https://code.angularjs.org/tools/typescript.js"></script>
+        <script src="https://code.angularjs.org/2.0.0-beta.0/angular2-polyfills.js"></script>
+        <script src="https://code.angularjs.org/2.0.0-beta.0/Rx.js"></script>
+        <script src="https://code.angularjs.org/2.0.0-beta.0/angular2.dev.js"></script>
+
+
+
+        <link rel="shortcut icon" href="http://www.serebii.net/pokemon_advance/225.gif">
+        <script src="javascript/support_tabs.js"></script>
+
+
+         <style type='text/css'>
+             .money .currency {
+               color: red;
+             }
+             .money .number {
+               color: green;
+             }
+             .markdown .title {
+               color: red;
+             }
+             .markdown .block {
+               color: green;
+             }
+             .markdown .strong {
+               color: blue;
+             }
+             .markdown .emphasis {
+               color: pink;
+             }
+             .markdown .strikethrough {
+               color: lime;
+             }
+             .markdown .inlinecode {
+               color: purple;
+             }
+             .markdown .codeblock {
+               color: #CC0066;
+             }
+             .markdown .orderedlist {
+               color: maroon;
+             }
+             .markdown .unorderedlist {
+               color: silver;
+             }
+            
+
+
+
+
+         </style>
+        <link href="styles/menu_styles.css" rel="stylesheet">
+        <link href="styles/style.css" rel="stylesheet">
+
+        <script type="text/javascript" src="javascript/jquery.colorfy.js"></script>
+        <script type="text/javascript" src="javascript/jquery.colorfy.markdown.js"></script>
+
+        <script type="text/javascript">
+                $(document).ready(function() {
+                var sideslider = $('[data-toggle=collapse-side]');
+                var sel = ("#" + sideslider.attr("data-target"));
+                var sel2 = ("#" + sideslider.attr("data-target-2"));
+                sideslider.click(function(event){
+                    $(sel).toggleClass('in');
+                    $(sel2).toggleClass('out');
+                });
+            });
+
+            $.fn.colorfy.money = {
+               "currency": /\$/m,
+               "number": /[0-9.]+/m
+             };
+
+
+
+
+        </script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    </head>
+    <body>
+
+<div class="cont">
+
+
+    <div class="editor_block">
+        <textarea id="textbox" spellcheck="false" style="width: 100%; height: 100%;" ></textarea>
+    </div>
+
+    <script type="text/javascript">
+
+
+    </script>
+
+
+
+
+    <div class="line_block">
+
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </div>
+
+    <div class="vertical_strip"></div>
+
+    <div class="horizontal_strip"></div>
+
+
+
+    <div class="nav-side-menu">
+        <div class="brand">Collaborative Python Interpreter</div>
+        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse-side" data-target="menu-content" data-target-2="side-collapse-container"></i>
+
+            <div class="menu-list">
+
+                <ul id="menu-content" class="menu-content collapse in">
+                    <li>
+                      <a href="#">
+                      <i class="fa fa-play fa-lg"></i> Run
+                      </a>
+                    </li>
+
+                    <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                      <a href="#"><i class="fa fa-cubes fa-lg"></i> AvailablePackages <span class="arrow"></span></a>
+                    </li>
+
+                    <ul class="sub-menu collapse" id="products">
+                        <!--<li><span><i class="fa fa-search fa-lg"></i><input></span></li>-->
+                        <li><a href="#">Gensim</a   ></li>
+                        <li><a href="#">Sklearn</a></li>
+                        <li><a href="#">HeapQ</a></li>
+
+                        <!--<li><a href="#">Tabs & Accordions</a></li>-->
+                        <!--<li><a href="#">Typography</a></li>-->
+                        <!--<li><a href="#">FontAwesome</a></li>-->
+                        <!--<li><a href="#">Slider</a></li>-->
+                        <!--<li><a href="#">Panels</a></li>-->
+                        <!--<li><a href="#">Widgets</a></li>-->
+                        <!--<li><a href="#">Bootstrap Model</a></li>-->
+                    </ul>
+
+
+                    <li data-toggle="collapse" data-target="#service" class="collapsed active">
+                      <a href="#"><i class="fa fa-desktop fa-lg"></i> Collaborators (1/3)<span class="arrow"></span></a>
+                    </li>
+                    <ul class="sub-menu collapse" id="service">
+                      <li class="active">Otto</li>
+                      <li >User2</li>
+                      <li>User3</li>
+                    </ul>
+
+
+                    <!--<li data-toggle="collapse" data-target="#new" class="collapsed">-->
+                      <!--<a href="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>-->
+                    <!--</li>-->
+                    <!--<ul class="sub-menu collapse" id="new">-->
+                      <!--<li>New New 1</li>-->
+                      <!--<li>New New 2</li>-->
+                      <!--<li>New New 3</li>-->
+                    <!--</ul>-->
+<!--&lt;!&ndash;-->
+                    <li data-toggle="collapse" data-target="#new" class="collapsed">
+                      <a href="#"><i class="fa fa-fort-awesome fa-lg"></i> SystemSpecs <span class="arrow"></span></a>
+                    </li>
+
+                    <ul class="sub-menu collapse" id="new">
+                      <li>OS:   Ubuntu</li>
+                      <li>Memory:   4.0 Gb</li>
+                      <li>Disk:     200 Gb</li>
+                      <li>Latency:  200/ms</li>
+
+                    </ul>
+
+
+
+<!--&ndash;&gt;-->
+
+                     <!--<li>-->
+                      <!--<a href="#">-->
+                      <!--<i class="fa fa-user fa-lg"></i> Profile-->
+                      <!--</a>-->
+                      <!--</li>-->
+
+                     <!--<li>-->
+                      <!--<a href="#">-->
+                      <!--<i class="fa fa-users fa-lg"></i> Users-->
+                      <!--</a>-->
+                    <!--</li>-->
+                </ul>
+         </div>
+        <!--<div class="center_me">-->
+            <!--<p>Reticulating splines...</p>-->
+            <!--<svg width="20%" height="20%" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">-->
+              <!--<g>-->
+                <!--<animateTransform attributeName="transform" type="rotate" values="0 33 33;270 33 33" begin="0s" dur="1.4s" fill="freeze" repeatCount="indefinite"/>-->
+                <!--<circle fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30" stroke-dasharray="187" stroke-dashoffset="610">-->
+                  <!--<animate attributeName="stroke" values="#4285F4;#DE3E35;#F7C223;#1B9A59;#4285F4" begin="0s" dur="5.6s" fill="freeze" repeatCount="indefinite"/>-->
+                  <!--<animateTransform attributeName="transform" type="rotate" values="0 33 33;135 33 33;450 33 33" begin="0s" dur="1.4s" fill="freeze" repeatCount="indefinite"/>-->
+                  <!--<animate attributeName="stroke-dashoffset" values="187;46.75;187" begin="0s" dur="1.4s" fill="freeze" repeatCount="indefinite"/>-->
+                <!--</circle>-->
+               <!--</g>-->
+            <!--</svg>-->
+        <!--</div>-->
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
