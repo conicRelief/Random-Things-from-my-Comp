@@ -1,0 +1,17 @@
+As of right now, information is taken from CSV files that are downloaded from admin.parkhub.com/orders(The QA instance)
+
+
+
+Lukes suggestion for event segmentation relies not using data-base calls, but throuhg taking events CSV by
+
+Current features:
+    Credit,Cash,Prepaid, Exemption:
+        Peak
+        Slope
+        Regress
+        Peak Value
+
+        Volume-STD
+        Volume-Mean
+        Volume-Peak
+
